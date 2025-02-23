@@ -28,7 +28,9 @@ footer {
 
 .dark {
   border-color: white;
-  i {
-    color: white;
+  a {
+    i {
+      color: white;
+    }
   }
 }

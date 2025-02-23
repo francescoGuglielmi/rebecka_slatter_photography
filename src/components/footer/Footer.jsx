@@ -7,15 +7,19 @@ const Footer = ({ theme }) => {
   ` ${style['light']}` :
   ` ${style['dark']}`;
 
-  console.log(window.location.pathname);
-
   const animation = window.location.pathname.includes('about') ? ` ${style['animate']}` : '';
 
   return (
     <footer className={profile + animation}>
-      <i className="fa-brands fa-instagram fa-2xl"></i>
-      <i className="fa-brands fa-linkedin-in fa-2xl"></i>
-      <i className="fa-regular fa-envelope fa-2xl"></i>
+      <a href="https://www.instagram.com/rebeckaslatter/?hl=en" target='_blank'>
+        <i className="fa-brands fa-instagram fa-2xl"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/rebecka-slatter-b28103136/" target='_blank'>
+        <i className="fa-brands fa-linkedin-in fa-2xl"></i>
+      </a>
+      <a href={`mailto:${"rebecka@rebeckaslatter.com"}`} >
+        <i className="fa-regular fa-envelope fa-2xl"></i>
+      </a>
     </footer>
   )
 }
