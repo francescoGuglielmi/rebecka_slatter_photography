@@ -21,10 +21,11 @@
   }
 }
 
-.width-section {
+/* .width-section {
   height: 295px;
+  z-index: 50;
   background-color: transparent;
-}
+} */
 
 .navigation-link {
   height: 20px;
@@ -35,7 +36,7 @@
   justify-content: center;
   font-family: 'Futura PT Book', sans-serif;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   transition: 0.2s ease;
   text-decoration: none;
@@ -73,13 +74,13 @@
 }
 
 .navigation-links {
-  margin-right: 170px;
+  margin-right: 50px;
   width: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 50%;
+  gap: 50px;
 }
 
 .navbar-title {
@@ -124,7 +125,7 @@
 
   .show-menu {
     &.nav-container {
-      height: 270px;
+      height: 220px;
     }
 
     &.navigation-links {
@@ -132,7 +133,8 @@
       flex-direction: column;
       position: absolute;
       top: 75px;
-      right: -87px;
+      right: 3%;
+      gap: 6%;
       margin-top: 5px;
       border-radius: 15px;
     }

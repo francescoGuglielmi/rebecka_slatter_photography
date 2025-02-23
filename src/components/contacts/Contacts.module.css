@@ -1,10 +1,8 @@
-/* Default styles for larger screens */
 .flex-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-
 
 .linkedin {
   margin-top: 100px;

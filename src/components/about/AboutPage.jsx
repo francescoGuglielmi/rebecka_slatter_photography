@@ -1,7 +1,9 @@
 import React from 'react';
 import style from './AboutPage.module.css';
 
-const AboutPage = () => {
+const AboutPage = ({setShowMenu}) => {
+  document.querySelector('html').style.setProperty("background-color", "white");
+
   return (
     <div className={style["about-page-main-container"]}>
       <div className={style["shift-text-up"]} style={{ animationDelay: "0s" }}>

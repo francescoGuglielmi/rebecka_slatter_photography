@@ -1,7 +1,3 @@
-/* .no-scroll {
-  overflow: hidden;
-} */
-
 .main-container {
   width: 100%;
   height: 100%;
@@ -13,7 +9,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80vh;
 }
 
 .image-loop img {
@@ -23,6 +19,7 @@
   top: 0;
   left: 50%;
   opacity: 0;
+  transform: translateX(-50%);
   animation: dissolve 37.5s infinite;
   overflow: hidden;
   z-index: -1;
@@ -82,13 +79,4 @@
   100% {
     opacity: 0;
   }
-}
-
-.image-loop img {
-  
-  max-width: 100%;
-  transform: translateX(-50%);
-  opacity: 0;
-  animation: dissolve 37.5s infinite;
-  overflow: hidden;
 }

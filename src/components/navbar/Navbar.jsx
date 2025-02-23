@@ -6,7 +6,7 @@ const Navbar = ({theme, showMenu, setShowMenu}) => {
   if (theme === 'dark') {
     return <DarkNavbar showMenu={showMenu} setShowMenu={setShowMenu}/>
   } else {
-    return <LightNavbar />
+    return <LightNavbar showMenu={showMenu} setShowMenu={setShowMenu}/>
   }
 }
 

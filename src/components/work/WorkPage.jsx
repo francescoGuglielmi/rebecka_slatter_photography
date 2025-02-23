@@ -3,7 +3,8 @@ import style from "./WorkPage.module.css";
 import { useState, useEffect } from "react";
 
 const WorkPage = () => {
-
+  document.querySelector('html').style.setProperty("background-color", "white");
+  
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [imageToDisplay, setImageToDisplay] = useState(null);
   const [visible, setVisible] = useState('visible');
