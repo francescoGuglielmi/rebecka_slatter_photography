@@ -34,3 +34,11 @@ footer {
     }
   }
 }
+
+.light {
+  a {
+    i {
+      color: black;
+    }
+  }
+}
